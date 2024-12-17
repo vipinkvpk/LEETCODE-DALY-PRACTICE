@@ -4,7 +4,8 @@ class Solution:
         for operation in operations:
             if operation == "X++" or operation == "++X":
                 x+=1
-            elif operation == "--X" or operation == "X--":
+            # elif operation == "--X" or operation == "X--":
+            else:
                 x-=1
         return x
             
