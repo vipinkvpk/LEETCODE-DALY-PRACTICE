@@ -5,3 +5,4 @@ class Solution:
             if num%3 !=0:
                 count+=1
         return count
+
