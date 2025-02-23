@@ -45,15 +45,3 @@ class Solution:
 
 
 
-class Solution:
-    def minimumAverage(self, nums: List[int]) -> float:
-        averages = []
-        leng = int(len(nums) / 2)
-        for num in range(leng):
-            smallest = min(nums)          # Find minimum element in nums (O(n))
-            largest = max(nums)           # Find maximum element in nums (O(n))
-            avg = (smallest + largest) / 2
-            averages.append(avg)
-            nums.remove(smallest)         # Remove smallest (O(n))
-            nums.remove(largest)          # Remove largest (O(n))
-        return min(averages)              # Find min in averages (O(n/2))
