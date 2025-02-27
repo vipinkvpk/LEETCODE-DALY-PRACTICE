@@ -11,3 +11,18 @@ class Solution:
 
 
         
+
+# The while loop is used to extract each digit of the number:
+# % 10 gives the last digit.
+# // 10 removes the last digit from the number.
+# This loop continues until the number becomes 0.
+# The extracted digit is then added to the digit_sum.
+
+# #Time complexity of above solution-O(N) -Already optimized
+
+# Beats73.02%
+
+
+# Space Complexity:
+# Storing sum_nums and digit_sum uses O(1) space.
+# No additional data structures are used, so the overall Space Complexity is O(1).
