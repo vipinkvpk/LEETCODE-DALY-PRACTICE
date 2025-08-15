@@ -15,7 +15,7 @@ class Solution:
         while queue:
             level=[]
             level_size=len(queue)
-            current_value=[]
+            # current_value=[]
             for _ in range(level_size):
                 current = queue.popleft()
                 level.append(current.val)
