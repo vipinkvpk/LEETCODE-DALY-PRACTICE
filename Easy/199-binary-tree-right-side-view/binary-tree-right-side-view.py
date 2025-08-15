@@ -17,14 +17,14 @@ class Solution:
             level_size=len(queue)
             # current_value=[]
             for _ in range(level_size):
-                current = queue.popleft()
-                level.append(current.val)
-                if current.left:
-                    queue.append(current.left)
-                if current.right:
-                    queue.append(current.right)
-                    level.append(current.right.val)
-            results.append(current.val)
+                current_node = queue.popleft()
+                level.append(current_node.val)
+                if current_node.left:
+                    queue.append(current_node.left)
+                if current_node.right:
+                    queue.append(current_node.right)
+                    # level.append(current_node.right.val)
+            results.append(current_node.val)
         return results
 
 
