@@ -18,7 +18,7 @@ class Solution:
             # current_value=[]
             for _ in range(level_size):
                 current_node = queue.popleft()
-                level.append(current_node.val)
+                # level.append(current_node.val)
                 if current_node.left:
                     queue.append(current_node.left)
                 if current_node.right:
