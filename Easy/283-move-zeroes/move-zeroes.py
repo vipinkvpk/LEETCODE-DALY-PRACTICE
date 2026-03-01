@@ -3,10 +3,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        i=0
-        for j in range(len(nums)):
-            if nums[j] != 0:
-                nums[i]=nums[j]
-                i+=1
-        for k in range(i, len(nums)):
-            nums[k]=0
+        non_zero_position = 0
+        for current_index, current_value in enumerate(nums):
+            if current_value != 0:
+                nums[non_zero_position],nums[current_index]=nums[current_index],nums[non_zero_position]
+                non_zero_position += 1
