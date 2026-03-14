@@ -4,10 +4,10 @@ class Solution:
         # is_pair = all((a,b) for a,b in pairwise(nums))
         # return is_pair
 
-        count = Counter(nums)
+        freq_count = Counter(nums)
         # for v in count.values():
         #     if v%2==0:
         #         return True 
         #     return False
-        return all(v%2==0 for v in count.values())
+        return all(count%2==0 for count in freq_count.values())
         
