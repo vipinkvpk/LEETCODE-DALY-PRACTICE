@@ -1,6 +1,5 @@
 class Solution:
     def longestMonotonicSubarray(self, nums: List[int]) -> int:
-        count=0
         inc=1
         dec=1
         max_length=1
