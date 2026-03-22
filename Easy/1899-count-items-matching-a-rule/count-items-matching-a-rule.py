@@ -6,10 +6,10 @@ class Solution:
             index = 1
         else:
             index=2
-        count =0 
+        matching_count =0 
         for item in items:
             if item[index]  == ruleValue:
-                count+=1 
-        return count
+                matching_count+=1 
+        return matching_count
         
         
