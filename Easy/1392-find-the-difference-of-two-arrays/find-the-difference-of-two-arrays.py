@@ -14,13 +14,16 @@ class Solution:
         # list3.append(list2)
 
         # return list3
-        lst=[]
-        unique1=set(nums1)
-        unique2=set(nums2)
-        unidiff1=unique1-unique2 
-        unidiff2=unique2-unique1
-        list1=list(unidiff1)
-        list2=list(unidiff2)
-        lst.append(list1)
-        lst.append(list2)
-        return lst
+        # lst=[]
+        # unique1=set(nums1)
+        # unique2=set(nums2)
+        # unidiff1=unique1-unique2 
+        # unidiff2=unique2-unique1
+        # list1=list(unidiff1)
+        # list2=list(unidiff2)
+        # lst.append(list1)
+        # lst.append(list2)
+        # return lst
+
+        s1, s2=set(nums1), set(nums2)
+        return [list(s1-s2),list(s2-s1)]
